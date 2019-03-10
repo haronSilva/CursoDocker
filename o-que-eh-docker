@@ -1,0 +1,8 @@
+Docker é:
+1- Não é um sistema baseado em máquinas virtuais
+2- É uma engine de administração de containers
+3- Docker se baseia na tecnologia LXC - Linux Containers
+4- Desenvolvida pela linguagem Go - Aquela feita pelo google
+5- O sistema de virtualização usado é baseado em software
+6- O kernel é compartilhado pelos containers criados
+7- Empacota software com vários níveis de isolamento

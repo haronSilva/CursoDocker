@@ -1,0 +1,6 @@
+Porque não usar uma VM?
+
+1- A quantidade de recursos utilizados por uma VM é bem superior
+aos recursos utilizados por um container. Uma vez que, a idea de um container
+é ser o mais enxuto possível! Numa VM, obrigatóriamente ela roda com um SO instalado,
+dessa forma, existe uma limitação por ter que usar bastante recurso
