@@ -4,3 +4,6 @@ Porque não usar uma VM?
 aos recursos utilizados por um container. Uma vez que, a idea de um container
 é ser o mais enxuto possível! Numa VM, obrigatóriamente ela roda com um SO instalado,
 dessa forma, existe uma limitação por ter que usar bastante recurso
+
+2- A abstração do Docker é mais amigável para criar os containers. O mesmo dispõe de serviços REST 
+para realizar a chamada das funcionalidade do Docker.

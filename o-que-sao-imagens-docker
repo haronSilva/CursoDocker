@@ -1,0 +1,15 @@
+O que são imagens Docker?
+
+1- Um modelo de sistema de arquivos somente-leitura usados para criar containers
+2- Imagens são criadas através de um processo chamado build
+ * Pode ser criado também através do comando commit, mas não é uma boa prática. Por que? Porque não existe
+ um arquivo descritor associado para criação dos containers. Já o build tem!
+3- São armazenados em repositórios chamados registry
+ * Sistema de registro de imagens - Dockerhub, por exemplo. Lá são divididas em repositórios.
+4- São compostos por uma ou mais camadas.
+5- Uma camada representa uma ou mais mudanças no sistema de arquivos
+6- Uma camada também é chamada de imagem intermediária
+7- A junção dessas camadas formam a imagem
+8- AUFS é muito usada.
+9- A grande de estratégia de dividir em camadas é o reuso.
+10- É possível compor imagens a partir de camadas de outras imagens.

@@ -1,0 +1,7 @@
+O que são containers?
+
+1- São processos isolados que usam o mesmo Kernel.
+2- São sistemas de arquivos criados a partir de imagens.
+3- Ambientes leves que a partir deles são executados softwares.
+4- Encapsula os binários da minha aplicação
+5- Algo entra chroot e uma VM.

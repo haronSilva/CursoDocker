@@ -1,0 +1,4 @@
+Relação entre imagens e containers
+
+A imagem é um modelo para criação de 'n' containers.
+O container é o processo em execução, baseado em uma imagem (descritor)
