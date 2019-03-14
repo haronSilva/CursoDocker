@@ -1,0 +1,13 @@
+Alguns comandos de gerenciamento de um container
+
+docker container start *nome-container | ID container* //Iniciando um container
+docker container stop *nome-container | ID container* //Parando um container
+docker container restart *nome-container | ID container* //Reiniciando um container
+
+Acessando logs
+
+docker container logs daemon-basic
+
+JSON com os detalhes e acessos ao container
+
+docker container inspect daomon-basic
