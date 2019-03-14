@@ -1,0 +1,4 @@
+Apontando o ngix para uma pasta do meu host, configurando um volume com
+o comando agora: apontando /usr/share/nginx/html para $(pwd)/not-found
+
+docker container run -p 8181:80 -v $(pwd)/html:/usr/share/nginx/html nginx
