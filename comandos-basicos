@@ -1,0 +1,20 @@
+Executando o download e execução iterativa de uma imagem do debian.
+O comando bash foi para mostrar que ele não compartilha com o bash da máquina host.
+O docker é inspirado nos comandos unix!
+
+docker container run debian bash --version
+
+Comando para lista os containers que estão sendo executados
+docker container ps
+
+Comando para listar todos os containers independente se estão parados ou não
+
+docker container ps -a
+
+Comando que executa uma imagem e a remove em seguida
+
+docker container run --rm debian
+
+Comando para rodar um container, modo iterativo e acessando o terminal dentro do container
+
+docker container run -it debian bash

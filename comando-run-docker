@@ -1,0 +1,9 @@
+O comando agrupa outros comando ao executa-lo, são eles:
+ - Executou o download de uma imagem do registry - dockerHub - docker image pull
+ - Criação de um container - docker container create
+ - Execução de um container - docker container start
+ - Executa no modo iterativo - docker container exec
+
+ Esse comando sempre cria um novo container
+
+ 

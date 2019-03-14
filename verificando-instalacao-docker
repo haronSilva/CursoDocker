@@ -1,0 +1,5 @@
+Foi executado o comando abaixo, que valida se a instalação do docker foi feita com sucesso.
+
+comando: docker container run hello-world
+O que ele faz? Ele procura se existe uma imagem com o nome hello-world. Se não existir, ele 
+vai baixar de algum registry. Provavel que seja o dockerhub

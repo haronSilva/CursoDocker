@@ -1,0 +1,3 @@
+É interessante sempre você expor de alguma forma o seu container.
+Seja por serviço, por volume. Não faz sentindo criar um container e deixa-lo isolado
+complemtamente.

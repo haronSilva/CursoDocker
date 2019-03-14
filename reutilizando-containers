@@ -1,0 +1,6 @@
+Uma forma de reutiliza um container é da seguintes forma:
+
+-a: attached pra ele anexar o uso do container escolhido com o terminal
+-i: modo iterativo
+
+docker container start -ai mydeb

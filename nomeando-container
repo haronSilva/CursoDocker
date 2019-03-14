@@ -1,0 +1,5 @@
+É sempre importante criar nomes únicos para o container. 
+O docker não deixar criar mais de um container com o mesmo nome!!!
+Fica mais fácil de identifica-los. Segue comando:
+
+docker container run --name mydeb -it debian bash
