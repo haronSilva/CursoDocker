@@ -1,0 +1,5 @@
+Docker Registry é uma api server side que guarda as imagens, onde pode realizar o download e upload
+de suas imagens.
+
+Docker Hub é um SaaS (Software as a Service) na nuvem que dentro dele tem um registry que faz o mesmo
+passo acima. É o time do docker que da o suporte ao registry do docker hub.

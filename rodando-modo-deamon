@@ -1,2 +1,4 @@
 Para rodar com background, é necessário ativar o modo daemon
 
+docker container run -d --name daemon-basic -p 8181:80 -v $(pwd)/html:/usr/share/nginx/html nginx
+

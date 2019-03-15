@@ -1,0 +1,28 @@
+A forma nova de baixar uma imagem de um registry
+
+docker image pull redis:latest
+
+Criando uma nova tag para uma imagem - 
+Tags são ponteiros para hash's de imagens existentes
+
+docker image tag redis:latest cod3r-redis
+
+Deletando imagens
+
+docker image rm redis:latest cod3r-redis 
+
+Lista as imagens
+
+docker image ls
+
+Inspecionar uma imagem
+
+docker image inspect *imagem/hashImagem*
+
+Para gerar uma imagem conforme o dockerFile
+
+docker image build --caminho
+
+Para publica em algum registry
+
+docker image push
