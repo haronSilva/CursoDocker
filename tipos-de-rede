@@ -1,0 +1,22 @@
+
+REDE NONE
+É possível deixar seu container sem rede. Acesso somente local em volumes, mas não se comunica
+entre containers
+Deverá ser executado o comando: docker container run -d --net none debian
+
+REDE BRIDGE
+É uma ponte para rede HOST e a interface de rede do container. É a rede padrão do docker.
+Através dela possa acessar os containers e acessar a rede do host e internet.
+
+
+CRIANDO UMA NOVA REDE, BASEADO NO TIPO BRIDGE
+
+docker network create --net brigde *nomeRede
+
+Com a criação é feito uma nova faixa de rede. 
+
+Para conectar um container de outra rede para uma rede existente basta 
+executar o comando:
+
+docker network connect *nomeRede *containerQueQuerSeLigarARede
+

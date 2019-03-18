@@ -1,0 +1,4 @@
+1. Criar uma conta no dockerhub
+2. No terminal executar o docker login
+3. Informar login e senha
+4. Executar o comando docker image push *nomeImagem
