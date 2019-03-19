@@ -1,0 +1,20 @@
+version: '2'
+volumes:
+  dados:
+services: 
+  db:
+    image: postgres:9.6
+    volumes:
+      #Volumes dos dados
+      - dados:/var/lib/postgresql/data
+      #Script
+      - ./scripts:/scripts
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+      #check se está rodando - docker-compose exec db psql -U postgres -f /scripts/check.sql
+  frontend:
+    image: nginx:1.13
+    volumes:
+      - ./web:/usr/share/nginx/html/
+    ports:
+      - 91:80
+    
