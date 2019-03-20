@@ -1,6 +1,9 @@
 version: '2'
 volumes:
   dados:
+networks:
+  banco:
+  web:      
 services: 
   db:
     image: postgres:9.6
@@ -11,10 +14,28 @@ services:
       - ./scripts:/scripts
       - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
       #check se está rodando - docker-compose exec db psql -U postgres -f /scripts/check.sql
+    networks:
+      - banco
   frontend:
     image: nginx:1.13
     volumes:
       - ./web:/usr/share/nginx/html/
+      #Confiuração proxu reverso - Aqui eu estou dizendo que o nginx vai passar a enxergar
+      # o conf customizado no meu host
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     ports:
-      - 91:80
+      - 80:80
+    networks:
+      - web
+    #O docker-compose vai orquestrar a inicialização primeiro executando o app pra depois ser o frontend
+    #Caso eu queira startar com docker-compose up *service, ele vai atrás das dependências  
+    depends_on:
+      - app
+  app: 
+    image: python:3.6
+    volumes:
+      #Aplicação
+      - ./app:/app
+    working_dir: /app
+    command: bash ./app.sh
     
