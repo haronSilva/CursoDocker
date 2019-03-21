@@ -1,0 +1,2 @@
+Serão criadas 3 container, baseado por um dockerfile - O docker compose do trabalho não aceita scale.
+docker-compose up -d --scale worker=3
